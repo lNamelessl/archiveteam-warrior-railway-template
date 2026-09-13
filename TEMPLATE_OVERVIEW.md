@@ -1,6 +1,6 @@
 # ArchiveTeam Warrior — donate idle bandwidth to web preservation, one click
 
-[![Deploy on Railway](https://railway.com/button.svg)](https://railway.app/new?github_url=https://github.com/lNamelessl/archiveteam-warrior-railway-template)
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/archiveteam-warrio-1)
 
 Websites die every day — Geocities, forums, news articles, entire social platforms — and [ArchiveTeam](https://archiveteam.org) is the volunteer swarm racing to save them. The **Warrior** is their turnkey archiving client: deploy it once, and it joins whichever preservation project currently needs workers, grabbing and archiving pages around the clock. This template turns it into a genuine one-click deploy: **deploy → set your leaderboard nickname → open the UI.** No Docker CLI, no config files, no reading wikis.
 

@@ -2,7 +2,7 @@
 
 One-click deploy of the [ArchiveTeam Warrior](https://wiki.archiveteam.org/index.php?title=Warrior) — the virtual archiving appliance that joins the internet's most crucial archiving efforts (formerly GeoCities, Google+, and currently whatever [ArchiveTeam's Choice](https://archiveteam.org) picks). Deploy it, enter a leaderboard nickname, open the UI: your warrior claims work from the tracker and starts preserving the web.
 
-[![Deploy on Railway](https://railway.com/button.svg)](https://railway.app/new?github_url=https://github.com/lNamelessl/archiveteam-warrior-railway-template)
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/archiveteam-warrio-1)
 
 ## What you get
 
