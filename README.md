@@ -9,6 +9,7 @@ One-click deploy of the [ArchiveTeam Warrior](https://wiki.archiveteam.org/index
 - One `warrior` service built from the **official** `atdr.meo.ws/archiveteam/warrior-dockerfile` image, **pinned by digest** so rebuilds are reproducible.
 - A persistent volume at `/home/warrior/projects` — your settings, selected project, and history survive redeploys and updates.
 - Auto-generated basic-auth credentials: the deploy form asks only for your leaderboard nickname; username and password are generated as Railway variables.
+- Sensible defaults baked in: `SELECTED_PROJECT=auto` (ArchiveTeam's Choice), `CONCURRENT_ITEMS=3`, `SHARED_RSYNC_THREADS=20` — overridable as service variables without editing anything.
 
 ## After deploying
 
@@ -22,7 +23,7 @@ One-click deploy of the [ArchiveTeam Warrior](https://wiki.archiveteam.org/index
 |---|---|---|
 | `DOWNLOADER` | *(set at deploy)* | Your nickname on the ArchiveTeam leaderboard |
 | `SELECTED_PROJECT` | `auto` | Project to run; `auto` = ArchiveTeam's Choice. Browse available slugs at `<your-domain>/available_projects/` |
-| `CONCURRENT_ITEMS` | `2` | Items worked in parallel (1–6 shown in the UI; more = more CPU/RAM/ban risk) |
+| `CONCURRENT_ITEMS` | `3` | Items worked in parallel (1–6 shown in the UI; more = more CPU/RAM/ban risk) |
 | `HTTP_USERNAME` | auto-generated | Basic-auth username for the web UI |
 | `HTTP_PASSWORD` | auto-generated | Basic-auth password for the web UI |
 | `SHARED_RSYNC_THREADS` | `20` | Parallel rsync threads used when a project uploads |
