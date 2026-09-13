@@ -5,4 +5,8 @@
 #     https://atdr.meo.ws/v2/archiveteam/warrior-dockerfile/manifests/latest | grep -i docker-content-digest
 FROM atdr.meo.ws/archiveteam/warrior-dockerfile@sha256:972495c60ab7f43d8abfd494ada86581398067e0cb5c66cfff1caeca01d9f6fb
 
+# Railway volumes mount root-owned, but the image's default USER is UID 1000 —
+# start.py must write projects/config.json on the volume at first boot.
+USER root
+
 EXPOSE 8001
